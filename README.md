@@ -1,18 +1,21 @@
 # Jogo 3 semestre
 
-## Nome do grupo
+## (Nome do grupo)
 
 ## 👨‍🎓 Integrantes: 
-Akira
-kaique ramon nogueira danats        
-
-
+- Akira Carolina Piziolo Rosa
+- Kaique Ramon Nogueira Dantas
+- Pedro Henrique Santos Teixeira  
+- Antonio     
 
 
 ## 👩‍🏫 Professores:
-### Orientador(a) 
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 1</a>
-### Instrutores
+
+- Alexandre de Souza Vasconcelos
+- Raul Dias Paiva Junior
+- Juliana Tuchsznajder Campos
+- Saulo de Oliveira Machado
+- Tatiana Cabral Couto (EaD)
 
 
 ## 📜 Descrição
