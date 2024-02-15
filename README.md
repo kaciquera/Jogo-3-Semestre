@@ -3,6 +3,8 @@
 ## Nome do grupo
 
 ## 👨‍🎓 Integrantes: 
+kaique ramon nogueira danats        
+
 
 
 ## 👩‍🏫 Professores:
