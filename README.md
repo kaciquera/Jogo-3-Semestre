@@ -1,4 +1,6 @@
+<p align="center">
 # Jogo 3 semestre
+</p>
 
 ## (Nome do grupo)
 
