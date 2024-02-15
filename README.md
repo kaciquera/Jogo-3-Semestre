@@ -4,6 +4,9 @@
 
 ## 👨‍🎓 Integrantes: 
 Akira
+kaique ramon nogueira danats        
+
+
 
 
 ## 👩‍🏫 Professores:
