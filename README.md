@@ -1,12 +1,4 @@
-# Inteli - Instituto de Tecnologia e Liderança 
-
-<p align="center">
-
-</p>
-
-<br>
-
-# Nome do projeto
+# Jogo 3 semestre
 
 ## Nome do grupo
 
