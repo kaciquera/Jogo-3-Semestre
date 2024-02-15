@@ -3,6 +3,7 @@
 ## Nome do grupo
 
 ## 👨‍🎓 Integrantes: 
+Akira
 
 
 ## 👩‍🏫 Professores:
