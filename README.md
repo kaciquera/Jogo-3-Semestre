@@ -1,5 +1,6 @@
 
-<h1 align="center"> Titulo </h1>
+<h1 align="center"> Nome do Jogo</h1>
+
 ## (Nome do grupo)
 
 ## 👨‍🎓 Integrantes: 
