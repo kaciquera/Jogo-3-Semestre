@@ -52,7 +52,7 @@ E, também, 4 subpastas que se organizam da seguinte forma:
 
 - <b>documentos</b>, ondem encontram-se todos os documentos relacionados ao projeto, sobretudo o Game Design Document (GDD), com uma subpasta <b>antigos</b> que armazena versões anteriores dos mesmos.
 
-- <b>executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar, com uma pasta: um para binários windows.
+- <b>executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar.
 
 - <b>imagens</b>, ondem encontram-se algumas imagens relacionadas ao jogo, sistema e logos, prontos para serem utilizados e visualizados.
 
