@@ -28,15 +28,35 @@
 
 ## 📁 Estrutura de pastas
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+-Raiz<br>
+|<br>
+|-->documentos<br>
+  &emsp;|-->antigos<br>
+  &emsp;| GDD.pdf<br>
+  &emsp;| apresentação do final do jogo.pdf<br>
+  &emsp;| mini trailer jogo.mp4<br>
+|-->executáveis<br>
+  &emsp;|-->Windows<br>
+|-->imagens<br>
+  &emsp;|-->Artes<br>
+  &emsp;|-->Imagens<br>
+|-->src<br>
+  &emsp;|--> Codigo do jogo <br>
+|--> readme.md<br>
 
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+A pasta raiz contém um arquivo principal:
 
-- <b>document</b>: aqui estão todos os documentos do projeto, como o Game Development Document (GDD) bem como documentos complementares, na pasta "other".
+- <b>readme.md</b>, que consiste em um guia geral sobre o projeto.
 
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto do jogo.
+E, também, 4 subpastas que se organizam da seguinte forma:
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto e o jogo (o mesmo que você está lendo agora).
+- <b>documentos</b>, ondem encontram-se todos os documentos relacionados ao projeto, sobretudo o Game Design Document (GDD), com uma subpasta <b>antigos</b> que armazena versões anteriores dos mesmos.
+
+- <b>executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar, com 1 pasta: um para binários windows.
+
+- <b>imagens</b>, ondem encontram-se algumas imagens relacionadas ao jogo, sistema e logos, prontos para serem utilizados e visualizados.
+
+- <b>src</b>, onde encontra-se todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🔧 Como executar o código
 
