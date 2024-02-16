@@ -50,13 +50,13 @@ A pasta raiz contém um arquivo principal:
 
 E, também, 4 subpastas que se organizam da seguinte forma:
 
-- <b>documentos</b>, ondem encontram-se todos os documentos relacionados ao projeto, sobretudo o Game Design Document (GDD), com uma subpasta <b>antigos</b> que armazena versões anteriores dos mesmos.
+- <b>Documentos</b>, ondem encontram-se todos os documentos relacionados ao projeto, sobretudo o Game Design Document (GDD), com uma subpasta <b>antigos</b> que armazena versões anteriores dos mesmos.
 
-- <b>executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar.
+- <b>Executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar.
 
-- <b>imagens</b>, ondem encontram-se algumas imagens relacionadas ao jogo, sistema e logos, prontos para serem utilizados e visualizados.
+- <b>Imagens</b>, ondem encontram-se algumas imagens relacionadas ao jogo, sistema e logos, prontos para serem utilizados e visualizados.
 
-- <b>src</b>, onde encontra-se todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+- <b>Src</b>, onde encontra-se todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🔧 Como executar o código
 
