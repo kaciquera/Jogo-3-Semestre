@@ -1,8 +1,5 @@
-<center>
 
-# Jogo 3 semestre
-</center>
-
+<h1 align="center"> Titulo </h1>
 ## (Nome do grupo)
 
 ## 👨‍🎓 Integrantes: 
