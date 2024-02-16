@@ -52,7 +52,7 @@ E, também, 4 subpastas que se organizam da seguinte forma:
 
 - <b>documentos</b>, ondem encontram-se todos os documentos relacionados ao projeto, sobretudo o Game Design Document (GDD), com uma subpasta <b>antigos</b> que armazena versões anteriores dos mesmos.
 
-- <b>executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar, com 1 pasta: um para binários windows.
+- <b>executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar, com uma pasta: um para binários windows.
 
 - <b>imagens</b>, ondem encontram-se algumas imagens relacionadas ao jogo, sistema e logos, prontos para serem utilizados e visualizados.
 
@@ -76,8 +76,8 @@ E, também, 4 subpastas que se organizam da seguinte forma:
 * 0.1.0 - XX/XX/2024
     *
 
-## 📋 Licença/License
+## 🎓 Referências
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Intelihub/Template_M1">Inteli, Nome do integrante 1, Nome do integrante 2, Nome do integrante 3, Nome do integrante 4, Nome do integrante 5, Nome do integrante 6, Nome do integrante 7</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+- colocar links do que for usando como videos, documentos, etc
 
 
