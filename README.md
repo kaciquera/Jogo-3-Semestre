@@ -7,7 +7,7 @@
 - Akira Carolina Piziolo Rosa
 - Kaique Ramon Nogueira Dantas
 - Pedro Henrique Santos Teixeira  
-- Antonio     
+- Antonio Henrique Taddeo Confuorto     
 
 
 ## 👩‍🏫 Professores:
