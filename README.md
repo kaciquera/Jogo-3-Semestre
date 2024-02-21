@@ -21,10 +21,11 @@
 
 ## 📜 Descrição
 
-*Descreva seu projeto (até 600 palavras)*
+PROTÓTIPO 
 
-*Inclua o link para o jogo aqui*
+O jogador testemunha a vida de um personagem desde sua infância, passando pelas fases da vida como infância, escola, faculdade, trabalho, relacionamentos, casamento e filhos. O personagem precisa organizar em uma mochila/mala objetos que irá levar para enfrentar essas fases, mas nem tudo vai caber na mesma mala. Cabe ao jogador organizar os objetos por meio do formato de puzzles em um "tangram".
 
+Ajude essa pessoa a montar a mala para viver cada ase nova de sua vida.
 
 ## 📁 Estrutura de pastas
 
@@ -78,6 +79,12 @@ E, também, 4 subpastas que se organizam da seguinte forma:
 
 ## 🎓 Referências
 
-- colocar links do que for usando como videos, documentos, etc
+- Jogos: 
+
+https://store.steampowered.com/app/1135690/Unpacking/
+
+https://store.steampowered.com/app/1629520/A_Little_to_the_Left/
+
+https://store.steampowered.com/app/2427700/Backpack_Battles/
 
 
