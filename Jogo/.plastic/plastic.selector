@@ -1,4 +1,0 @@
-repository "Jogo@Kaciquera@cloud"
-  path "/"
-    br "/main"
-    co "/main"
