@@ -8,11 +8,10 @@ namespace Game
         [SerializeField] private string itemName;
         [SerializeField] private Sprite itemSprite;
         [SerializeField]
-        private bool[,] originalItemSize = new bool[3, 3]
-        {
-            { true , true, false},
-            { true , false, false},
-            { true , false, false}
-        };
+        private bool[,] originalItemSize = new bool[5, 5];
+
+        public string ItemName => itemName; 
+        public Sprite ItemSprite  => itemSprite;
+        public bool[,] OriginalItemSize => originalItemSize;
     }
 }

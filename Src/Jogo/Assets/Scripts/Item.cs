@@ -1,16 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Game
 {
     public class Item : MonoBehaviour
     {
-        [SerializeField]
-        private bool[,] originalItemSize = new bool[3, 3]
-        {
-            { true , true, false},
-            { true , false, false},
-            { true , false, false}
-        };
+        [SerializeField] private ItemData itemData;
+        [SerializeField] private Image itemImage;
+
 
         private int rotationAmount;
         private bool[,] currentItemSize;
@@ -18,9 +15,22 @@ namespace Game
         public Vector2Int ItemOrigin { get; private set; }
         public ItemSlot Slot { get; private set; }
 
+        private void OnValidate()
+        {
+            if (itemData == null) return;
+            currentItemSize = itemData.OriginalItemSize;
+            if (itemImage != null)
+            {
+                itemImage.sprite = itemData.ItemSprite;
+            }
+            name = $"Item [{itemData.ItemName}]";
+        }
+
         private void Start()
         {
-            currentItemSize = originalItemSize;
+            currentItemSize = itemData.OriginalItemSize;
+            itemImage.sprite = itemData.ItemSprite;
+            name = $"Item [{itemData.ItemName}]";
         }
 
         public void SetSlot(ItemSlot slot)
@@ -32,7 +42,7 @@ namespace Game
         {
             currentItemSize = RotateMatrix(currentItemSize);
             rotationAmount++;
-            ItemOrigin = GetBottomLeftPositionAfterRotation(originalItemSize, rotationAmount);
+            ItemOrigin = GetBottomLeftPositionAfterRotation(itemData.OriginalItemSize, rotationAmount);
         }
 
         bool[,] RotateMatrix(bool[,] matrix)
