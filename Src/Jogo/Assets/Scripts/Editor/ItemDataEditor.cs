@@ -4,6 +4,7 @@ using UnityEngine;
 namespace Game
 {
     [CustomEditor(typeof(ItemData))]
+    [CanEditMultipleObjects]
     public class ItemDataEditor : Editor
     {
         public override void OnInspectorGUI()

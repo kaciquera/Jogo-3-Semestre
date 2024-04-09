@@ -89,13 +89,12 @@ namespace Game
     public partial class Item
     {
 #if UNITY_EDITOR
-        private const int imageScale = 4;
 
         private void OnValidate()
         {
             if (itemData == null) return;
             ItemSize = itemData.OriginalItemSize;
-            itemImage.rectTransform.sizeDelta = new Vector2(itemData.ItemSprite.texture.width, itemData.ItemSprite.texture.height) * imageScale;
+            itemImage.rectTransform.sizeDelta = new Vector2(itemData.GirdSizeInPixels,itemData.GirdSizeInPixels) * itemData.GridSize;
             if (itemImage != null)
             {
                 itemImage.sprite = itemData.ItemSprite;

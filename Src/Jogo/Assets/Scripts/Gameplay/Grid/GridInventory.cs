@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +20,8 @@ namespace Game
 
         private readonly Dictionary<Vector2Int, ItemSlot> slotByGrid = new Dictionary<Vector2Int, ItemSlot>();
         private RectTransform rectTransform;
+
+        public static event Action OnVictory;
 
         private void Start()
         {
@@ -42,6 +45,16 @@ namespace Game
             }
         }
 
+        public void CheckVictoryCondition()
+        {
+            foreach(ItemSlot slot in slotByGrid.Values)
+            {
+                if (!slot.IsOccupied) return;
+            }
+            Debug.Log("Victory");
+            OnVictory?.Invoke();
+        }
+
         private Vector3 GetWorldPosition(int x, int y)
         {
             return new Vector3(x, y) * (cellSize * rectTransform.localScale.x) + transform.position + offset;
@@ -51,21 +64,6 @@ namespace Game
         {
             if (!slotByGrid.ContainsKey(gridPosition)) return null;
             return slotByGrid[gridPosition];
-        }
-
-        public void SetSlotHoverState(Vector2Int gridPosition, bool state)
-        {
-            slotByGrid[gridPosition].SetHoverState(state);
-        }
-
-        public void SetSlotItem(Vector2Int gridPosition, Item item)
-        {
-            slotByGrid[gridPosition].SetItemInSlot(item);
-        }
-
-        public void ClearSlotItem(Vector2Int gridPosistion)
-        {
-            slotByGrid[gridPosistion].ClearItemInSlot();
         }
 
         public bool ValidateSlot(Vector2Int gridPosition)

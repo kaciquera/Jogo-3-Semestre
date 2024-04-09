@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: H
   itemSprite: {fileID: 21300000, guid: 79dab87916214944a9c23bf6181f6051, type: 3}
-  itemGridSize: 128
+  girdSizeInPixels: 128
   serializable:
   - index0: 0
     index1: 0

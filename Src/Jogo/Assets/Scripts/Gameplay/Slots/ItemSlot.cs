@@ -14,6 +14,7 @@ namespace Game
         private GridInventory grid;
         private Vector2Int gridPosition;
         public Item ItemInSlot { get; private set; }
+        public GridInventory Grid => grid;
         public bool IsOccupied => ItemInSlot != null;
 
         public void Initialize(GridInventory grid, Vector2Int gridPosition, float slotSize)
