@@ -9,6 +9,36 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene_Menu.unity
     guid: bc2501c8df3c3d14eb051f1d45f16e3e
   - enabled: 1
-    path: Assets/Scenes/Sceve_Level01.unity
+    path: Assets/Scenes/Sceve_Level0.0_Tutorial.unity
+    guid: f130d9f32c3a72b4fb11b876e1c47722
+  - enabled: 1
+    path: Assets/Scenes/Sceve_Level0.1_Tutorial.unity
+    guid: b733403b9aa48c14ab0671f3867b2bf6
+  - enabled: 1
+    path: Assets/Scenes/Sceve_Level_1.unity
+    guid: 8e28eeb59738a7e4481bf65cf60b6156
+  - enabled: 1
+    path: Assets/Scenes/Sceve_Level_2.unity
+    guid: 8823eb5b6c7461547b7e61b4ca168155
+  - enabled: 1
+    path: Assets/Scenes/Sceve_Level_3.unity
+    guid: cd4c0bc7d8b3c364a80842c5eb5cbef7
+  - enabled: 1
+    path: Assets/Scenes/Sceve_Level_4.unity
+    guid: c3c982bd8e9188442b0b80306da06290
+  - enabled: 1
+    path: Assets/Scenes/Sceve_Level_5.unity
+    guid: bde0ba8a3da99d148afba71f9166e869
+  - enabled: 1
+    path: Assets/Scenes/Sceve_Level_6.unity
+    guid: f8b9c49fd7e61ff47b95b06e8c61b94d
+  - enabled: 1
+    path: Assets/Scenes/Sceve_Level_7.unity
+    guid: 71761c70846afcb469dcc858bd09eec1
+  - enabled: 1
+    path: Assets/Scenes/Sceve_Level_8.unity
+    guid: 561e1bc80f2f16140a1fa8de0079bc2f
+  - enabled: 1
+    path: Assets/Scenes/Sceve_LevelBase.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

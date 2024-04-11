@@ -216,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334442104549167766, guid: 87ea10d2a0c7fc44a84b40763611731e, type: 3}
       propertyPath: m_Name
-      value: Button Variant
+      value: TextedButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
