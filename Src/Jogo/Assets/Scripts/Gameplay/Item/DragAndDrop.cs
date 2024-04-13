@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace Game
 {
-    public partial class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+    public partial class DragAndDrop : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
         [SerializeField] private Canvas canvas;
 
@@ -13,7 +13,9 @@ namespace Game
         private CanvasGroup canvasGroup;
         private ItemSlot lastHoveredSlot;
         private Vector3 initialPosition;
+        private Vector3 lastPosition;
         private bool isDraging;
+        private bool hasRotatedBeforeDrag;
 
         private void Awake()
         {
@@ -33,13 +35,23 @@ namespace Game
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            if (eventData.button != PointerEventData.InputButton.Right)
+            if (eventData.button == PointerEventData.InputButton.Left)
             {
+                lastPosition = transform.position;
                 AllignToGridPoint(eventData.position, eventData.pressEventCamera);
             }
             else
             {
                 RotateToRight();
+            }
+        }
+
+
+        public void OnPointerUp(PointerEventData eventData)
+        {
+            if (eventData.button == PointerEventData.InputButton.Left && !isDraging && !hasRotatedBeforeDrag)
+            {
+                transform.position = lastPosition;
             }
         }
 
@@ -58,7 +70,7 @@ namespace Game
         {
             if (!isDraging) return;
             if (eventData.button != PointerEventData.InputButton.Left) return;
-
+            hasRotatedBeforeDrag = false;
             rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 
             if (eventData.hovered.Count != 0)
@@ -78,7 +90,6 @@ namespace Game
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            if (!isDraging) return;
             if (eventData.button != PointerEventData.InputButton.Left) return;
 
             isDraging = false;
@@ -130,8 +141,6 @@ namespace Game
                     currentSlot.SetItemInSlot(item);
                 }
                 item.SetSlot(slot, slots);
-                slot.Grid.CheckVictoryCondition();
-
                 return;
             }
 
@@ -167,7 +176,11 @@ namespace Game
         {
             if (item.MainSlot != null) return;
             ClearLastSlotHoveredState();
-            item.RotateToRight();
+            PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
+            pointerEventData.position = Input.mousePosition;
+            item.RotateToRight(pointerEventData.position, pointerEventData.pressEventCamera);
+            SetSlotHoveredStateOn(pointerEventData);
+            hasRotatedBeforeDrag = true;
         }
 
         private void AllignToGridPoint(Vector2 position, Camera pressEventCamera)

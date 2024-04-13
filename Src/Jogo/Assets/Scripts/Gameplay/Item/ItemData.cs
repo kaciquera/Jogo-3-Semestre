@@ -4,24 +4,19 @@ using UnityEngine;
 namespace Game
 {
     [CreateAssetMenu(fileName = "Item_", menuName = "Itens/Item Data")]
-    public partial class ItemData : ScriptableObject
+    public partial class ItemData : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] private string itemName;
         [SerializeField] private Sprite itemSprite;
         [SerializeField] private int girdSizeInPixels = 128;
+        [SerializeField, HideInInspector] private List<ElementSlot<bool>> serializable;
+        [SerializeField, HideInInspector] private Vector2Int editorGridSize = new Vector2Int(5, 5);
 
         public string ItemName => itemName;
         public int GirdSizeInPixels => girdSizeInPixels;
         public bool[,] OriginalItemSize { get; set; }
         public Vector2Int GridSize => new Vector2Int(OriginalItemSize.GetLength(0), OriginalItemSize.GetLength(1));
         public Sprite ItemSprite => itemSprite;
-    }
-
-    public partial class ItemData : ScriptableObject, ISerializationCallbackReceiver
-    {
-#if UNITY_EDITOR
-        [SerializeField, HideInInspector] private List<ElementSlot<bool>> serializable;
-        [SerializeField, HideInInspector] private Vector2Int editorGridSize = new Vector2Int(5, 5);
 
         public void OnBeforeSerialize()
         {
@@ -53,9 +48,5 @@ namespace Game
                 }
             }
         }
-#else
-        public void OnBeforeSerialize() { }
-        public void OnAfterDeserialize() { }
-#endif
     }
 }
