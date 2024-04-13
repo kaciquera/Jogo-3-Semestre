@@ -13,8 +13,10 @@ namespace Game
         private Image slotImage;
         private GridInventory grid;
         private Vector2Int gridPosition;
+
         public Item ItemInSlot { get; private set; }
         public bool IsOccupied => ItemInSlot != null;
+        public GridInventory Grid => grid;
 
         public void Initialize(GridInventory grid, Vector2Int gridPosition, float slotSize)
         {

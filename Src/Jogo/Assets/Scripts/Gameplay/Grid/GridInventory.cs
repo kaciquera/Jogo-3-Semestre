@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,6 +21,8 @@ namespace Game
         private readonly Dictionary<Vector2Int, ItemSlot> slotByGrid = new Dictionary<Vector2Int, ItemSlot>();
         private RectTransform rectTransform;
 
+        public static event Action OnVictory;
+
         private void Start()
         {
             rectTransform = transform.root.GetComponent<RectTransform>();
@@ -40,6 +43,15 @@ namespace Game
                     slotByGrid.Add(gridPosition, itemSlot);
                 }
             }
+        }
+
+        public void CheckVictoryCondition()
+        {
+            foreach (ItemSlot slot in slotByGrid.Values)
+            {
+                if (!slot.IsOccupied) return;
+            }
+            OnVictory?.Invoke();
         }
 
         private Vector3 GetWorldPosition(int x, int y)

@@ -129,12 +129,14 @@ namespace Game
         {
             if (itemData == null) return;
             ItemSize = itemData.OriginalItemSize;
-            rectTransform = itemImage.rectTransform;
-            rectTransform.sizeDelta = new Vector2(itemData.ItemSprite.texture.width, itemData.ItemSprite.texture.height) * imageScale;
-            if (itemImage != null)
+
+            if (itemImage != null && itemData.ItemSprite != null)
             {
+                rectTransform = itemImage.rectTransform;
+                rectTransform.sizeDelta = new Vector2(itemData.ItemSprite.texture.width, itemData.ItemSprite.texture.height) * imageScale;
                 itemImage.sprite = itemData.ItemSprite;
             }
+
             name = $"Item [{itemData.ItemName}]";
         }
 

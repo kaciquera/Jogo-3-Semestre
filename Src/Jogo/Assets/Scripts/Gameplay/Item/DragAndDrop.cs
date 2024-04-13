@@ -141,6 +141,8 @@ namespace Game
                     currentSlot.SetItemInSlot(item);
                 }
                 item.SetSlot(slot, slots);
+                slot.Grid.CheckVictoryCondition();
+
                 return;
             }
 
