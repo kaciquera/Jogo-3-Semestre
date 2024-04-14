@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 674bb2d2651d22e40b0fc38c3b389be4, type: 3}
-  m_Name: Item_1x3
+  m_Name: Item_Suco
   m_EditorClassIdentifier: 
-  itemName: 1x3
-  itemSprite: {fileID: 21300000, guid: 83a30c4cf1612634599793923684065c, type: 3}
+  itemName: Suco
+  itemSprite: {fileID: 21300000, guid: 45b596f32b942c54aa99f04ea997ca81, type: 3}
   girdSizeInPixels: 128
   serializable:
   - index0: 0
@@ -22,25 +22,10 @@ MonoBehaviour:
   - index0: 0
     index1: 1
     element: 1
-  - index0: 0
-    index1: 2
-    element: 1
   - index0: 1
     index1: 0
     element: 0
   - index0: 1
     index1: 1
     element: 0
-  - index0: 1
-    index1: 2
-    element: 0
-  - index0: 2
-    index1: 0
-    element: 0
-  - index0: 2
-    index1: 1
-    element: 0
-  - index0: 2
-    index1: 2
-    element: 0
-  editorGridSize: {x: 3, y: 3}
+  editorGridSize: {x: 2, y: 2}
