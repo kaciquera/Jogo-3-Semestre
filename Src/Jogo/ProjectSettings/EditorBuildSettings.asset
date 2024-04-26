@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/Scene_Option.unity
     guid: e8ad5c9522f4bd847862b01450dc6162
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menus/Scene_Quit.unity
     guid: 36063b7c041499d4b8d4acd90c0e131c
   - enabled: 1
