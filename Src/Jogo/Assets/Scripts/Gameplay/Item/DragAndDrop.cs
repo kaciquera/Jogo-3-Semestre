@@ -16,6 +16,8 @@ namespace Game
         private Vector3 lastPosition;
         private bool isDraging;
         private bool hasRotatedBeforeDrag;
+        private Transform originalParent;
+
 
         private void Awake()
         {
@@ -63,6 +65,7 @@ namespace Game
             isDraging = true;
             canvasGroup.blocksRaycasts = false;
             transform.SetAsLastSibling();
+           
             RemoveFromSlot();
         }
 
