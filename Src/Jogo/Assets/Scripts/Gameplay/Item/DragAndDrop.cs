@@ -16,7 +16,7 @@ namespace Game
         private Vector3 lastPosition;
         private bool isDraging;
         private bool hasRotatedBeforeDrag;
-        private Transform originalParent;
+ 
 
 
         private void Awake()
@@ -103,6 +103,15 @@ namespace Game
             if (eventData.hovered.Count != 0)
             {
                 TryAddToSlot(eventData);
+            }
+            Vector2 mousePosition = Input.mousePosition;
+            bool isMouseInsideScreen = mousePosition.x >= 0 && mousePosition.x <= Screen.width &&
+                                       mousePosition.y >= 0 && mousePosition.y <= Screen.height;
+
+            if (!isMouseInsideScreen)
+            {
+               
+                rectTransform.anchoredPosition = initialPosition;
             }
         }
 

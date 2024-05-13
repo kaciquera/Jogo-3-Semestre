@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class EnableOnVictory : MonoBehaviour
 {
+    [SerializeField] private int level;
     [SerializeField] private bool isEnabledOnVictory;
     [SerializeField] private GameObject[] objectsToEnable;
+    
 
     private void Awake()
     {
@@ -18,6 +20,8 @@ public class EnableOnVictory : MonoBehaviour
 
     private void OnVictory()
     {
+        PersistentData.Instance.DebugTest();
+        PlayerPrefs.SetInt("CurrentLevel", level);
         foreach (var item in objectsToEnable)
         {
             item.SetActive(isEnabledOnVictory);

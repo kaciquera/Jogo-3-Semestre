@@ -1,0 +1,1 @@
+{"root":[{"assemblyName":"Assembly-CSharp","nameSpace":"Game","className":"Main","methodName":"CreateMain","loadTypes":1,"isUnityClass":false},{"assemblyName":"Unity.ResourceManager","nameSpace":"UnityEngine.ResourceManagement.ResourceProviders","className":"AssetBundleProvider","methodName":"Init","loadTypes":4,"isUnityClass":true}]}

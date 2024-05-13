@@ -9,6 +9,7 @@ namespace Game
         [SerializeField] private string itemName;
         [SerializeField] private Sprite itemSprite;
         [SerializeField] private int girdSizeInPixels = 128;
+        [SerializeField] private AudioClip[] pickSound;
         [SerializeField, HideInInspector] private List<ElementSlot<bool>> serializable;
         [SerializeField, HideInInspector] private Vector2Int editorGridSize = new Vector2Int(5, 5);
 

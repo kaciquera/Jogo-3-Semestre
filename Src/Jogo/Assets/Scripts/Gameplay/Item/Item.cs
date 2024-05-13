@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Game
@@ -20,6 +21,7 @@ namespace Game
         private void Awake()
         {
             rectTransform = itemImage.rectTransform;
+
         }
 
         private void Start()
@@ -60,7 +62,10 @@ namespace Game
             //Vector2 deltaPivot = normalizedPivot - rectTransform.pivot;
             //rectTransform.pivot = normalizedPivot;
             //rectTransform.localPosition += new Vector3(deltaPivot.x * rectTransform.rect.width, deltaPivot.y * rectTransform.rect.height, 0);
-            rectTransform.Rotate(Vector3.forward, angle);
+            //rectTransform.Rotate(Vector3.forward, angle);
+            Vector3 targetRotation = transform.eulerAngles;
+            targetRotation.z += angle;
+            rectTransform.DORotate(targetRotation, 0.1f);
 
             //Vector3 oldLocalPosition = rectTransform.localPosition;
             //Vector2 oldPivot = rectTransform.pivot;

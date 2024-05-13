@@ -7,7 +7,7 @@ namespace Game
     {
         protected Button button;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             button = GetComponent<Button>();
             button.onClick.AddListener(OnClick);

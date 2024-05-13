@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Texts_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 263e8c6e0ee0f854fa4447a16cd1a98a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 21120749568
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288226611200
+    m_Localized: Do you really want to leave the game?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714742476365824
+    m_Localized: Fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805587179331584
+    m_Localized: "\rLanguage"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 807545210462208
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 816018279161856
+    m_Localized: Erase Progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1166335315337216
+    m_Localized: Do you want to erase your progress?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1176340953358336
+    m_Localized: Do you want to go to the main menu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1187231056846848
+    m_Localized: Do you really want to reset the level?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1482893849845760
+    m_Localized: "\u201CJEJI CAME TO THE WORLD, LET\u2019S MEET HER!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1486874143678464
+    m_Localized: Congratulations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1488546987302912
+    m_Localized: Next phase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1491191428866048
+    m_Localized: "\u201CJEJI HAS ARRIVED TO LIGHTEN UP THE DAY!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1492006679928832
+    m_Localized: "\u201CIT\u2019S THE FIRST DAY OF SCHOOL AND JEJE WANTS TO BRING
+      SOMETHING VERY SPECIAL!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1494398913798144
+    m_Localized: "\u201CHMMMM IT\u2019S BREAK TIME, WHAT DID JEJI BRING IN HIS LUNCHBOX?\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1513187034324992
+    m_Localized: "\u201CMOMMY\u2019S GOING TO BE AWESOME IF she GETS HOME AND SEE
+      THIS MESS! BETTER PACK EVERYTHING\u2026\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1514095554125824
+    m_Localized: "\u201CA SPECIAL DAY DESERVES A SPECIAL LOOK!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1514555732189184
+    m_Localized: "\u201CA NEW JOURNEY AND NEW FRIENDS WAIT FOR JEJI\u201D"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

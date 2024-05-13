@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Texts_pt
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt
+  m_SharedData: {fileID: 11400000, guid: 263e8c6e0ee0f854fa4447a16cd1a98a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 21120749568
+    m_Localized: Voltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288226611200
+    m_Localized: Realmente deseja sair do jogo?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714742476365824
+    m_Localized: "Tela Cheia\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805587179331584
+    m_Localized: Linguagem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 807545210462208
+    m_Localized: Som
+    m_Metadata:
+      m_Items: []
+  - m_Id: 816018279161856
+    m_Localized: Apagar Progresso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1166335315337216
+    m_Localized: Deseja apagar seu progresso ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1176340953358336
+    m_Localized: Deseja ir para o menu principal ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1187231056846848
+    m_Localized: Deseja realmente resetar a fase?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1482893849845760
+    m_Localized: "\u201CJEJI VEIO AO MUNDO, VAMOS CONHEC\xCA-LA!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1486874143678464
+    m_Localized: "Parab\xE9ns"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1488546987302912
+    m_Localized: Proxima fase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1491191428866048
+    m_Localized: "\u201CJEJI CHEGOU PARA ILUMINAR O DIA!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1492006679928832
+    m_Localized: "\u201C\xC9 O PRIMEIRO DIA DE AULA E JEJE QUER LEVAR ALGO MUITO
+      ESPECIAL!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1494398913798144
+    m_Localized: "\u201CHMMMM \xC9 HORA DO INTERVALO, O QUE SER\xC1 QUE JEJI TROUXE
+      EM SUA LANCHEIRA?\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1513187034324992
+    m_Localized: " \u201CMAM\xC3E VAI FICAR UMA FERA SE CHEGAR EM CASA E VER ESSA
+      BAGUN\xC7A! MELHOR ARRUMAR TUDO\u2026\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1514095554125824
+    m_Localized: "\u201CUM DIA ESPECIAL MERECE UM LOOKINHO ESPECIAL!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1514555732189184
+    m_Localized: "\u201CUMA NOVA JORNADA E NOVOS AMIGOS ESPERAM POR JEJI\u201D"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
