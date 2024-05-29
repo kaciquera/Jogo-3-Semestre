@@ -19,6 +19,11 @@ namespace Game
         public Vector2Int GridSize => new Vector2Int(OriginalItemSize.GetLength(0), OriginalItemSize.GetLength(1));
         public Sprite ItemSprite => itemSprite;
 
+        public void PlayPickSound()
+        {
+            int index = Random.Range(0, pickSound.Length);
+            AudioManager.Instance.PlaySound(pickSound[index]);
+        }
         public void OnBeforeSerialize()
         {
             serializable = new List<ElementSlot<bool>>();

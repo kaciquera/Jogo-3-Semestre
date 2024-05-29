@@ -93,6 +93,26 @@ MonoBehaviour:
     m_Localized: "\u201CUMA NOVA JORNADA E NOVOS AMIGOS ESPERAM POR JEJI\u201D"
     m_Metadata:
       m_Items: []
+  - m_Id: 7230397111144448
+    m_Localized: Mudo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7235212000169984
+    m_Localized: 'Volume dos itens '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7235552938364928
+    m_Localized: Volume das musicas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7301947025854464
+    m_Localized: Clique com o botao direito e arraste o item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307686607917056
+    m_Localized: Clique esquerdo para girar o item
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

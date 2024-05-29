@@ -15,7 +15,7 @@ namespace Game
             }
             else if (instance != this)
             {
-                Destroy(gameObject);
+                DontDestroyOnLoad(gameObject);
             }
         }
         public void DebugTest()

@@ -92,6 +92,26 @@ MonoBehaviour:
     m_Localized: "\u201CA NEW JOURNEY AND NEW FRIENDS WAIT FOR JEJI\u201D"
     m_Metadata:
       m_Items: []
+  - m_Id: 7230397111144448
+    m_Localized: Mute
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7235212000169984
+    m_Localized: Volume of items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7235552938364928
+    m_Localized: Music volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7301947025854464
+    m_Localized: Right click and drag the item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307686607917056
+    m_Localized: Left click to rotate the item
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

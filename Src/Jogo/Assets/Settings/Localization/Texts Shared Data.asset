@@ -89,6 +89,28 @@ MonoBehaviour:
     m_Key: txt-historia5
     m_Metadata:
       m_Items: []
+  - m_Id: 7230397111144448
+    m_Key: btn-mudo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7235212000169984
+    m_Key: btn-volumeItens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7235552938364928
+    m_Key: btn-volumemusica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7301947025854464
+    m_Key: txt-tutorial1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307686607917056
+    m_Key: 'txt-tutorial2
+
+'
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -37,6 +37,7 @@ namespace Game
 
         public void OnPointerDown(PointerEventData eventData)
         {
+            item.ItemData.PlayPickSound();
             if (eventData.button == PointerEventData.InputButton.Left)
             {
                 lastPosition = transform.position;
@@ -188,6 +189,7 @@ namespace Game
 
         private void RotateToRight()
         {
+            
             if (item.MainSlot != null) return;
             ClearLastSlotHoveredState();
             PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
@@ -195,6 +197,7 @@ namespace Game
             item.RotateToRight(pointerEventData.position, pointerEventData.pressEventCamera);
             SetSlotHoveredStateOn(pointerEventData);
             hasRotatedBeforeDrag = true;
+            item.ItemData.PlayPickSound();
         }
 
         private void AllignToGridPoint(Vector2 position, Camera pressEventCamera)
