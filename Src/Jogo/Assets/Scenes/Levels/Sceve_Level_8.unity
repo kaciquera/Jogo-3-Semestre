@@ -1133,6 +1133,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcb9edf98ef8b714b9edbc14ecf1a2d8, type: 3}
+--- !u!114 &1173866766 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4012538479264235830, guid: bcb9edf98ef8b714b9edbc14ecf1a2d8, type: 3}
+  m_PrefabInstance: {fileID: 1173866765}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1212196280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1794,6 +1805,10 @@ PrefabInstance:
       propertyPath: level
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4199210491434955588, guid: 43456eb0c3a6b734e8ff5129d398c0cd, type: 3}
+      propertyPath: nextLevelButton
+      value: 
+      objectReference: {fileID: 1173866766}
     - target: {fileID: 5808809279416805213, guid: 43456eb0c3a6b734e8ff5129d398c0cd, type: 3}
       propertyPath: sceneName
       value: Sceve_Level_9

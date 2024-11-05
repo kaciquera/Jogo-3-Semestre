@@ -1785,6 +1785,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcb9edf98ef8b714b9edbc14ecf1a2d8, type: 3}
+--- !u!114 &1402714331 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4012538479264235830, guid: bcb9edf98ef8b714b9edbc14ecf1a2d8, type: 3}
+  m_PrefabInstance: {fileID: 1402714330}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1428826870 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6529146435209328777, guid: 921f4217efaabaf4f81e67e0760d2d6c, type: 3}
@@ -2227,6 +2238,7 @@ MonoBehaviour:
   isEnabledOnVictory: 1
   objectsToEnable:
   - {fileID: 1580011279}
+  nextLevelButton: {fileID: 1402714331}
 --- !u!114 &1670900997
 MonoBehaviour:
   m_ObjectHideFlags: 0

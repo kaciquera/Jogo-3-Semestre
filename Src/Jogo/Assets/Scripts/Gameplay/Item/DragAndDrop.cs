@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using static UnityEngine.UI.GridLayoutGroup;
 
 namespace Game
 {
@@ -25,6 +26,8 @@ namespace Game
             rectTransform = GetComponent<RectTransform>();
             canvasGroup = GetComponent<CanvasGroup>();
             initialPosition = rectTransform.anchoredPosition;
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
         }
 
         private void Update()
@@ -32,6 +35,14 @@ namespace Game
             if (isDraging && Input.GetMouseButtonDown(1))
             {
                 RotateToRight();
+            }
+
+            if (isDraging)
+            {
+                if (!InsideCanvas())
+                {
+                    ExecuteEvents.endDragHandler.Invoke(this, new PointerEventData(EventSystem.current));
+                }
             }
         }
 
@@ -105,15 +116,46 @@ namespace Game
             {
                 TryAddToSlot(eventData);
             }
-            Vector2 mousePosition = Input.mousePosition;
+            /*Vector2 mousePosition = Input.mousePosition;
             bool isMouseInsideScreen = mousePosition.x >= 0 && mousePosition.x <= Screen.width &&
                                        mousePosition.y >= 0 && mousePosition.y <= Screen.height;
 
             if (!isMouseInsideScreen)
             {
-               
+              
                 rectTransform.anchoredPosition = initialPosition;
             }
+
+            if (!InsideCanvas())
+            {
+
+                rectTransform.anchoredPosition = initialPosition;
+            }
+            */
+
+        }
+
+        private bool InsideCanvas()
+        {
+            bool isInside = true;
+
+            Vector3[] corners = new Vector3[4];
+
+            GetComponent<RectTransform>().GetWorldCorners(corners);
+
+            for (int i = 0; i < 4; i++)
+            {
+                
+                Vector2 localSpacePoint = transform.parent.InverseTransformPoint(corners[i]);
+
+                
+                if (transform.parent.GetComponent<RectTransform>().rect.Contains(localSpacePoint) == false)
+                {
+                    isInside = false;
+                }
+            }
+
+            return isInside;
         }
 
         private void SetSlotHoveredStateOn(PointerEventData eventData)

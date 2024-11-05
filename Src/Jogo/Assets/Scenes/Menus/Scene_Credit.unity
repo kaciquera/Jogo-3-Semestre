@@ -596,7 +596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 565678e030824d7499ab03ccbd7f4207, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c8eaa2bcbb6c374ca588572edd4aaca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -773,9 +773,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla
-    blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla
-    blabla bla blabla bla blabla bla blabla bla bla
+  m_text: 'Akira linda maravilhosa bonita e amavel quebra codigo
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
   m_sharedMaterial: {fileID: -6902699212190025085, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}

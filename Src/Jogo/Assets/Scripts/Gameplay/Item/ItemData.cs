@@ -22,7 +22,7 @@ namespace Game
         public void PlayPickSound()
         {
             int index = Random.Range(0, pickSound.Length);
-            AudioManager.Instance.PlaySound(pickSound[index]);
+            //AudioManager.Instance.PlaySound(pickSound[index]);
         }
         public void OnBeforeSerialize()
         {
