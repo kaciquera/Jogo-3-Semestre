@@ -4,12 +4,12 @@
             {
                 "type": "Unity.Muse.Common.PreferenceDataWrapper`1[[System.Collections.Generic.List`1[[Unity.Muse.Common.Account.OrganizationInfo, Unity.Muse.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
                 "key": "Unity.Muse.Common.Preferences.organizations",
-                "value": "{\"value\":[{\"rid\":1000}],\"references\":{\"version\":2,\"RefIds\":[{\"rid\":1000,\"type\":{\"class\":\"OrganizationInfo\",\"ns\":\"Unity.Muse.Common.Account\",\"asm\":\"Unity.Muse.Common\"},\"data\":{\"org_id\":\"4673733287406\",\"org_name\":\"blurkiraa_unity\",\"status\":\"not-entitled\"}}]}}"
+                "value": "{\"value\":[{\"rid\":1000},{\"rid\":1001},{\"rid\":1002},{\"rid\":1003}],\"references\":{\"version\":2,\"RefIds\":[{\"rid\":1000,\"type\":{\"class\":\"OrganizationInfo\",\"ns\":\"Unity.Muse.Common.Account\",\"asm\":\"Unity.Muse.Common\"},\"data\":{\"org_id\":\"4673359173945\",\"org_name\":\"EletroCardio\",\"status\":\"not-entitled\"}},{\"rid\":1001,\"type\":{\"class\":\"OrganizationInfo\",\"ns\":\"Unity.Muse.Common.Account\",\"asm\":\"Unity.Muse.Common\"},\"data\":{\"org_id\":\"4673648335408\",\"org_name\":\"Gamegaard AS Publisher\",\"status\":\"not-entitled\"}},{\"rid\":1002,\"type\":{\"class\":\"OrganizationInfo\",\"ns\":\"Unity.Muse.Common.Account\",\"asm\":\"Unity.Muse.Common\"},\"data\":{\"org_id\":\"4673062473156\",\"org_name\":\"roarvr25\",\"status\":\"not-entitled\"}},{\"rid\":1003,\"type\":{\"class\":\"OrganizationInfo\",\"ns\":\"Unity.Muse.Common.Account\",\"asm\":\"Unity.Muse.Common\"},\"data\":{\"org_id\":\"4672933960601\",\"org_name\":\"Three Harmonies\",\"status\":\"not-entitled\"}}]}}"
             },
             {
                 "type": "Unity.Muse.Common.PreferenceDataWrapper`1[[Unity.Muse.Common.Account.OrganizationInfo, Unity.Muse.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]",
                 "key": "Unity.Muse.Common.Preferences.organization",
-                "value": "{\"value\":{\"rid\":1000},\"references\":{\"version\":2,\"RefIds\":[{\"rid\":1000,\"type\":{\"class\":\"OrganizationInfo\",\"ns\":\"Unity.Muse.Common.Account\",\"asm\":\"Unity.Muse.Common\"},\"data\":{\"org_id\":\"4673733287406\",\"org_name\":\"blurkiraa_unity\",\"status\":\"not-entitled\"}}]}}"
+                "value": "{\"value\":{\"rid\":1000},\"references\":{\"version\":2,\"RefIds\":[{\"rid\":1000,\"type\":{\"class\":\"OrganizationInfo\",\"ns\":\"Unity.Muse.Common.Account\",\"asm\":\"Unity.Muse.Common\"},\"data\":{\"org_id\":\"4673359173945\",\"org_name\":\"EletroCardio\",\"status\":\"not-entitled\"}}]}}"
             },
             {
                 "type": "Unity.Muse.Common.PreferenceDataWrapper`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",

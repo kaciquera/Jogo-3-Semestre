@@ -35,7 +35,7 @@ namespace Game
         {
             if (RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, cursorPosition, eventCamera, out Vector2 localCursor))
             {
-                RotateAroundPoint(localCursor, -90f);
+                RotateAroundPoint(itemData.Pivot, -90f);
             }
 
             ItemSize = RotateMatrixCounterClockwise(ItemSize);
@@ -45,31 +45,39 @@ namespace Game
         {
             if (RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, cursorPosition, eventCamera, out Vector2 localCursor))
             {
-                RotateAroundPoint(localCursor, 90f);
+                RotateAroundPoint(itemData.Pivot, 90f);
             }
 
             ItemSize = RotateMatrix(ItemSize);
         }
 
+        private Tween currentRotationTween;
+
         private void RotateAroundPoint(Vector2 point, float angle)
         {
-            Vector2 normalizedPivot = ItemData.Pivot;
-            
+            if (currentRotationTween != null && currentRotationTween.IsActive() && currentRotationTween.IsPlaying())
+            {
+                currentRotationTween.Complete();
+            }
+            StartRotation(point, angle);
+        }
 
+        private void StartRotation(Vector2 point, float angle)
+        {
+            Vector2 pivotOffset = new Vector2(
+                rectTransform.rect.width * (point.x - rectTransform.pivot.x),
+                rectTransform.rect.height * (point.y - rectTransform.pivot.y)
+            );
 
-            Vector2 deltaPivot = normalizedPivot - rectTransform.pivot;
-            rectTransform.pivot = normalizedPivot;
-            rectTransform.localPosition += new Vector3(deltaPivot.x * rectTransform.rect.width, deltaPivot.y * rectTransform.rect.height, 0);
-            rectTransform.Rotate(Vector3.forward, angle);
-            Vector3 targetRotation = transform.eulerAngles;
-            targetRotation.z += angle;
-            rectTransform.DORotate(targetRotation, 0.1f);
+            Vector3 worldPoint = rectTransform.TransformPoint(pivotOffset);
+            Vector3 currentRotation = rectTransform.eulerAngles;
 
-            Vector3 oldLocalPosition = rectTransform.localPosition;
-            Vector2 oldPivot = rectTransform.pivot;
-            rectTransform.pivot = new Vector2(0.5f, 0.5f);
-            Vector3 size = new Vector3((oldPivot.x - 0.5f) * rectTransform.rect.width, (oldPivot.y - 0.5f) * rectTransform.rect.height, 0) * rectTransform.root.localScale.x;
-            rectTransform.localPosition = oldLocalPosition - size;
+            rectTransform.RotateAround(worldPoint, Vector3.forward, angle);
+            Vector3 targetRotation = rectTransform.eulerAngles;
+
+            rectTransform.eulerAngles = currentRotation;
+
+            currentRotationTween = rectTransform.DORotate(targetRotation, 0.25f);
         }
 
         bool[,] RotateMatrix(bool[,] matrix)
