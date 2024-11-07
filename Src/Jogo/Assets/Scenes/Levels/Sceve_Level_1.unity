@@ -1194,6 +1194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Historia
       objectReference: {fileID: 0}
+    - target: {fileID: 8964719392859186426, guid: f127de61d55389544a3d7970eb2ee76a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2019,6 +2023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VictoryCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3302670570868368850, guid: 43456eb0c3a6b734e8ff5129d398c0cd, type: 3}
+      propertyPath: m_text
+      value: "Parab\xE9ns"
+      objectReference: {fileID: 0}
     - target: {fileID: 4199210491434955588, guid: 43456eb0c3a6b734e8ff5129d398c0cd, type: 3}
       propertyPath: level
       value: 1
@@ -2027,6 +2035,10 @@ PrefabInstance:
       propertyPath: nextLevelButton
       value: 
       objectReference: {fileID: 1941856066}
+    - target: {fileID: 4483116436128514030, guid: 43456eb0c3a6b734e8ff5129d398c0cd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5808809279416805213, guid: 43456eb0c3a6b734e8ff5129d398c0cd, type: 3}
       propertyPath: sceneName
       value: Sceve_Level_2

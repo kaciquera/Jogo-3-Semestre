@@ -21,7 +21,6 @@ namespace Game
         private void Awake()
         {
             rectTransform = itemImage.rectTransform;
-
         }
 
         private void Start()
@@ -54,24 +53,23 @@ namespace Game
 
         private void RotateAroundPoint(Vector2 point, float angle)
         {
-            //Vector2 normalizedPivot = new Vector2(
-            //    (point.x - rectTransform.rect.min.x) / rectTransform.rect.width,
-            //    (point.y - rectTransform.rect.min.y) / rectTransform.rect.height
-            //);
+            Vector2 normalizedPivot = ItemData.Pivot;
+            
 
-            //Vector2 deltaPivot = normalizedPivot - rectTransform.pivot;
-            //rectTransform.pivot = normalizedPivot;
-            //rectTransform.localPosition += new Vector3(deltaPivot.x * rectTransform.rect.width, deltaPivot.y * rectTransform.rect.height, 0);
-            //rectTransform.Rotate(Vector3.forward, angle);
+
+            Vector2 deltaPivot = normalizedPivot - rectTransform.pivot;
+            rectTransform.pivot = normalizedPivot;
+            rectTransform.localPosition += new Vector3(deltaPivot.x * rectTransform.rect.width, deltaPivot.y * rectTransform.rect.height, 0);
+            rectTransform.Rotate(Vector3.forward, angle);
             Vector3 targetRotation = transform.eulerAngles;
             targetRotation.z += angle;
             rectTransform.DORotate(targetRotation, 0.1f);
 
-            //Vector3 oldLocalPosition = rectTransform.localPosition;
-            //Vector2 oldPivot = rectTransform.pivot;
-            //rectTransform.pivot = new Vector2(0.5f, 0.5f);
-            //Vector3 size = new Vector3((oldPivot.x - 0.5f) * rectTransform.rect.width, (oldPivot.y - 0.5f) * rectTransform.rect.height, 0) * rectTransform.root.localScale.x;
-            //rectTransform.localPosition = oldLocalPosition + size;
+            Vector3 oldLocalPosition = rectTransform.localPosition;
+            Vector2 oldPivot = rectTransform.pivot;
+            rectTransform.pivot = new Vector2(0.5f, 0.5f);
+            Vector3 size = new Vector3((oldPivot.x - 0.5f) * rectTransform.rect.width, (oldPivot.y - 0.5f) * rectTransform.rect.height, 0) * rectTransform.root.localScale.x;
+            rectTransform.localPosition = oldLocalPosition - size;
         }
 
         bool[,] RotateMatrix(bool[,] matrix)

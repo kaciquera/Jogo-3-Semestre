@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b4eaea9f49d71b946bd97ad9ebc19c07, type: 3}
   - {fileID: 8300000, guid: 30a386470fd7f26438540521ac2a1258, type: 3}
   - {fileID: 8300000, guid: 87b7a810b84018c489a529cef20ffa9d, type: 3}
+  pivot: {x: 0.5, y: 0.5}
   serializable:
   - index0: 0
     index1: 0
@@ -26,10 +27,4 @@ MonoBehaviour:
   - index0: 0
     index1: 1
     element: 1
-  - index0: 1
-    index1: 0
-    element: 0
-  - index0: 1
-    index1: 1
-    element: 0
-  editorGridSize: {x: 2, y: 2}
+  editorGridSize: {x: 1, y: 2}

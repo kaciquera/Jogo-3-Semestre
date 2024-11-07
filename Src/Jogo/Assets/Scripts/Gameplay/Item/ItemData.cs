@@ -10,19 +10,24 @@ namespace Game
         [SerializeField] private Sprite itemSprite;
         [SerializeField] private int girdSizeInPixels = 128;
         [SerializeField] private AudioClip[] pickSound;
+        [SerializeField] private Vector2 pivot = new Vector2(0.5f, 0.5f);
         [SerializeField, HideInInspector] private List<ElementSlot<bool>> serializable;
         [SerializeField, HideInInspector] private Vector2Int editorGridSize = new Vector2Int(5, 5);
 
         public string ItemName => itemName;
         public int GirdSizeInPixels => girdSizeInPixels;
         public bool[,] OriginalItemSize { get; set; }
+
+        public Vector2 Pivot => pivot;
         public Vector2Int GridSize => new Vector2Int(OriginalItemSize.GetLength(0), OriginalItemSize.GetLength(1));
         public Sprite ItemSprite => itemSprite;
 
         public void PlayPickSound()
         {
+            if (pickSound.Length == 0) return;
+
             int index = Random.Range(0, pickSound.Length);
-            //AudioManager.Instance.PlaySound(pickSound[index]);
+            AudioManager.Instance.PlaySound(pickSound[index]);
         }
         public void OnBeforeSerialize()
         {

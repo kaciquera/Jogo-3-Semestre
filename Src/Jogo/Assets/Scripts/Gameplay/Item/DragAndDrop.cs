@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using static UnityEngine.UI.GridLayoutGroup;
 
 namespace Game
 {
@@ -18,8 +18,6 @@ namespace Game
         private bool isDraging;
         private bool hasRotatedBeforeDrag;
  
-
-
         private void Awake()
         {
             item = GetComponent<Item>();
@@ -41,7 +39,7 @@ namespace Game
             {
                 if (!InsideCanvas())
                 {
-                    ExecuteEvents.endDragHandler.Invoke(this, new PointerEventData(EventSystem.current));
+                    ReturnToInitialPosition();
                 }
             }
         }
@@ -116,22 +114,6 @@ namespace Game
             {
                 TryAddToSlot(eventData);
             }
-            /*Vector2 mousePosition = Input.mousePosition;
-            bool isMouseInsideScreen = mousePosition.x >= 0 && mousePosition.x <= Screen.width &&
-                                       mousePosition.y >= 0 && mousePosition.y <= Screen.height;
-
-            if (!isMouseInsideScreen)
-            {
-              
-                rectTransform.anchoredPosition = initialPosition;
-            }
-
-            if (!InsideCanvas())
-            {
-
-                rectTransform.anchoredPosition = initialPosition;
-            }
-            */
 
         }
 
@@ -201,7 +183,12 @@ namespace Game
                 return;
             }
 
-            rectTransform.anchoredPosition = initialPosition;
+            ReturnToInitialPosition();
+        }
+
+        private void ReturnToInitialPosition()
+        {
+            rectTransform.DOAnchorPos(initialPosition, 0.25f);
         }
 
         private bool TryGetSlot(PointerEventData eventData, out ItemSlot slot)
