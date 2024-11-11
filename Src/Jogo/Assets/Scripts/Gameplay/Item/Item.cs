@@ -10,6 +10,7 @@ namespace Game
         [SerializeField] private Image itemImage;
 
         private RectTransform rectTransform;
+        private Tween currentRotationTween;
 
         public bool[,] ItemSize { get; private set; }
         public Vector2Int SelectedGrid { get; set; }
@@ -51,7 +52,6 @@ namespace Game
             ItemSize = RotateMatrix(ItemSize);
         }
 
-        private Tween currentRotationTween;
 
         private void RotateAroundPoint(Vector2 point, float angle)
         {

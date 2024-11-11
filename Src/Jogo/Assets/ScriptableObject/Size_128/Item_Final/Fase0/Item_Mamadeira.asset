@@ -16,7 +16,7 @@ MonoBehaviour:
   itemSprite: {fileID: 21300000, guid: 7da82bb1a9b54de4e9814de143e2e470, type: 3}
   girdSizeInPixels: 128
   pickSound: []
-  pivot: {x: 0.25, y: 0.5}
+  pivot: {x: 0.5, y: 0.5}
   serializable:
   - index0: 0
     index1: 0
