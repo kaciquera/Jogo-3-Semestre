@@ -18,10 +18,10 @@ namespace Game
                 DontDestroyOnLoad(gameObject);
             }
         }
+
         public void DebugTest()
         {
             Debug.Log("test");
         }
-
     }
 }

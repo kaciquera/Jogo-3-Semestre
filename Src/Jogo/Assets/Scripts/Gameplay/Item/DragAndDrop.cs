@@ -1,36 +1,34 @@
 ﻿using DG.Tweening;
-using System;
+using Game.Game;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using static UnityEngine.Networking.UnityWebRequest;
 
 namespace Game
 {
     public partial class DragAndDrop : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
         [SerializeField] private Canvas canvas;
+        [SerializeField] private Canvas gridCanvas;
 
         private Item item;
         private RectTransform rectTransform;
         private RectTransform canvasRect;
         private CanvasGroup canvasGroup;
-        private GraphicRaycaster raycaster;
         private ItemSlot lastHoveredSlot;
         private Vector3 initialPosition;
         private Vector3 lastPosition;
         private bool isDraging;
         private bool hasRotatedBeforeDrag;
 
+        private static DragAndDrop currentDrag;
+
         private void Awake()
         {
             item = GetComponent<Item>();
             rectTransform = GetComponent<RectTransform>();
             canvasGroup = GetComponent<CanvasGroup>();
-            raycaster = GetComponent<GraphicRaycaster>();
-            canvasRect = transform.parent.GetComponent<RectTransform>();
-            raycaster = canvasRect.GetComponent<GraphicRaycaster>();
+            canvasRect = canvas.GetComponent<RectTransform>();
             initialPosition = rectTransform.anchoredPosition;
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
@@ -42,7 +40,6 @@ namespace Game
             {
                 RotateToRight();
             }
-
         }
 
         public void OnPointerDown(PointerEventData eventData)
@@ -59,7 +56,6 @@ namespace Game
             }
         }
 
-
         public void OnPointerUp(PointerEventData eventData)
         {
             if (eventData.button == PointerEventData.InputButton.Left && !isDraging && !hasRotatedBeforeDrag)
@@ -72,8 +68,9 @@ namespace Game
         {
             if (eventData.button != PointerEventData.InputButton.Left) return;
 
-            canvasGroup.alpha = .6f;
+            canvasGroup.alpha = 0.6f;
             isDraging = true;
+            currentDrag = this;
             canvasGroup.blocksRaycasts = false;
             transform.SetAsLastSibling();
 
@@ -107,10 +104,11 @@ namespace Game
             if (eventData.button != PointerEventData.InputButton.Left) return;
 
             isDraging = false;
+            currentDrag = null;
             canvasGroup.alpha = 1f;
             canvasGroup.blocksRaycasts = true;
             ClearLastSlotHoveredState();
-            
+
             if (eventData.hovered.Count != 0)
             {
                 TryAddToSlot(eventData);
@@ -119,60 +117,23 @@ namespace Game
             {
                 ReturnToInitialPosition();
             }
-
         }
 
         private bool InsideCanvas()
         {
             Vector3[] corners = new Vector3[4];
-
             rectTransform.GetWorldCorners(corners);
 
             foreach (Vector3 corner in corners)
             {
                 Vector2 localSpacePoint = transform.parent.InverseTransformPoint(corner);
-                if (!canvasRect.rect.Contains(localSpacePoint))
-                {
-                    return false;
-                }
+                if (!canvasRect.rect.Contains(localSpacePoint)) return false;
             }
 
-            RectTransform[] allUIElements = canvasRect.GetComponentsInChildren<RectTransform>();
-
-
-            foreach (RectTransform element in allUIElements)
-            {
-                if (element == rectTransform) continue;
-                
-                if (element.CompareTag("Item") || element.CompareTag("Slot"))
-                {
-                    if (IsRectTransformOverlapping(rectTransform, element))
-                    {
-                        return false;
-                    }
-                }
-            }
-
-            return true;
-        }
-
-        private bool IsRectTransformOverlapping(RectTransform rect1, RectTransform rect2)
-        {
-            Rect rect1World = GetWorldRect(rect1);
-            Rect rect2World = GetWorldRect(rect2);
-
-            return rect1World.Overlaps(rect2World); 
-        }
-
-        private Rect GetWorldRect(RectTransform rect)
-        {
-            Vector3[] corners = new Vector3[4];
-            rectTransform.GetWorldCorners(corners);
-
-            Vector3 bottomLeft = corners[0];
-            Vector3 topRight = corners[2];
-
-            return new Rect(bottomLeft, topRight - bottomLeft);
+            return !UIOverlapChecker.IsOverlappingOtherUIElements(rectTransform, 
+                new Canvas[] { canvas, gridCanvas }, 
+                new string[] { "Item", "Slot" }
+                );
         }
 
         private void SetSlotHoveredStateOn(PointerEventData eventData)
@@ -242,6 +203,7 @@ namespace Game
                     return slot;
                 }
             }
+
             slot = null;
             return false;
         }
@@ -253,8 +215,9 @@ namespace Game
 
         private void RotateToRight()
         {
-
             if (item.MainSlot != null) return;
+            if (!isDraging && currentDrag != null && currentDrag != this) return;
+
             ClearLastSlotHoveredState();
             PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
             pointerEventData.position = Input.mousePosition;
