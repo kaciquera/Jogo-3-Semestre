@@ -142,7 +142,7 @@ namespace Game
             if (itemImage != null && itemData.ItemSprite != null)
             {
                 rectTransform = itemImage.rectTransform;
-                Vector2Int size = new Vector2Int(itemData.ItemSprite.texture.width, itemData.ItemSprite.texture.height) / 32;
+                Vector2Int size = new Vector2Int(itemData.GridSize.x,itemData.GridSize.y);
                 rectTransform.sizeDelta = size * itemData.GirdSizeInPixels;
                 itemImage.sprite = itemData.ItemSprite;
             }

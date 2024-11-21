@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Item_Suco
   m_EditorClassIdentifier: 
   itemName: Suco
-  itemSprite: {fileID: 21300000, guid: 45b596f32b942c54aa99f04ea997ca81, type: 3}
+  itemSprite: {fileID: -1996772831, guid: 2b7783c2722636e4db247305ad613a09, type: 3}
   girdSizeInPixels: 128
+  pickSound: []
+  pivot: {x: 0.5, y: 0.5}
   serializable:
   - index0: 0
     index1: 0
@@ -22,10 +24,4 @@ MonoBehaviour:
   - index0: 0
     index1: 1
     element: 1
-  - index0: 1
-    index1: 0
-    element: 0
-  - index0: 1
-    index1: 1
-    element: 0
-  editorGridSize: {x: 2, y: 2}
+  editorGridSize: {x: 1, y: 2}

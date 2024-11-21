@@ -24,6 +24,7 @@ namespace Game
 
         public void PlayPickSound()
         {
+            if (pickSound == null) return;
             if (pickSound.Length == 0) return;
 
             int index = Random.Range(0, pickSound.Length);

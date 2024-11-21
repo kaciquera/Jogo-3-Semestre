@@ -70,7 +70,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 36b40cf77d7c2324999e89e738dff764, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
+  gridCanvas: {fileID: 0}
 --- !u!114 &-4526901153800324846
 MonoBehaviour:
   m_ObjectHideFlags: 0

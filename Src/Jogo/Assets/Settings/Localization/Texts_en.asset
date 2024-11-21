@@ -55,7 +55,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1482893849845760
-    m_Localized: "\u201CJEJI CAME TO THE WORLD, LET\u2019S MEET HER!\u201D"
+    m_Localized: "Dear friend, Marina,\n\nI received the wonderful news that your
+      daughter, Jeji, was born today! What a joy for the family! Soon, we\u2019ll
+      have an afternoon coffee with some carrot cake. When Jeji is a little older,
+      she and my Lily will become great friends!\n\nWith love, Melina."
     m_Metadata:
       m_Items: []
   - m_Id: 1486874143678464
@@ -67,16 +70,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1491191428866048
-    m_Localized: "\u201CJEJI HAS ARRIVED TO LIGHTEN UP THE DAY!\u201D"
+    m_Localized: "Dear, don't forget to grab the baby's things and put them in her
+      bag.\n\nJo\xE3o."
     m_Metadata:
       m_Items: []
   - m_Id: 1492006679928832
-    m_Localized: "\u201CIT\u2019S THE FIRST DAY OF SCHOOL AND JEJE WANTS TO BRING
-      SOMETHING VERY SPECIAL!\u201D"
+    m_Localized: Dear, today is Jeji's first day of school. Get her things ready
+      and don't forget to take her to preschool!
     m_Metadata:
       m_Items: []
   - m_Id: 1494398913798144
-    m_Localized: "\u201CHMMMM IT\u2019S BREAK TIME, WHAT DID JEJI BRING IN HIS LUNCHBOX?\u201D"
+    m_Localized: '... and don''t forget to pack her lunchbox.
+
+
+      Marina.'
     m_Metadata:
       m_Items: []
   - m_Id: 1513187034324992
@@ -110,6 +117,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 7307686607917056
     m_Localized: Left click to rotate the item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71085101538095104
+    m_Localized: March 12, 1992
     m_Metadata:
       m_Items: []
   references:

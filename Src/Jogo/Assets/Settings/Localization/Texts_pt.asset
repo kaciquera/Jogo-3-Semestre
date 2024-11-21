@@ -55,7 +55,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1482893849845760
-    m_Localized: "\u201CJEJI VEIO AO MUNDO, VAMOS CONHEC\xCA-LA!\u201D"
+    m_Localized: "Querida amiga, Marina\r\n\r\nRecebi a maravilhosa not\xEDcia de
+      que a sua filha, Jeji, nasceu hoje! Que alegria para a fam\xEDlia! Em breve
+      tomaremos um caf\xE9 da tarde com um bolinho de cenoura. Quando Jeji estiver
+      um pouco maior, ela e a minha Lily ser\xE3o grandes amigas! \r\n\r\nCom carinho,
+      Melina.\n"
     m_Metadata:
       m_Items: []
   - m_Id: 1486874143678464
@@ -67,17 +71,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1491191428866048
-    m_Localized: "\u201CJEJI CHEGOU PARA ILUMINAR O DIA!\u201D"
+    m_Localized: "Querida, n\xE3o se esque\xE7a de pegar as coisas da beb\xEA e colocar
+      na bolsa dela.\r\n\nJo\xE3o.\n"
     m_Metadata:
       m_Items: []
   - m_Id: 1492006679928832
-    m_Localized: "\u201C\xC9 O PRIMEIRO DIA DE AULA E JEJE QUER LEVAR ALGO MUITO
-      ESPECIAL!\u201D"
+    m_Localized: "Querido, hoje \xE9 o primeiro dia de aula de Jeji. Arrume as coisas
+      dela e n\xE3o se esque\xE7a de leva-la para a escolinha!\n"
     m_Metadata:
       m_Items: []
   - m_Id: 1494398913798144
-    m_Localized: "\u201CHMMMM \xC9 HORA DO INTERVALO, O QUE SER\xC1 QUE JEJI TROUXE
-      EM SUA LANCHEIRA?\u201D"
+    m_Localized: "... e n\xE3o se esque\xE7a de montar o lanche dela.\n\nMarina.\n"
     m_Metadata:
       m_Items: []
   - m_Id: 1513187034324992
@@ -111,6 +115,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 7307686607917056
     m_Localized: Clique esquerdo para girar o item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71085101538095104
+    m_Localized: "12 de mar\xE7o de 1992"
     m_Metadata:
       m_Items: []
   references:

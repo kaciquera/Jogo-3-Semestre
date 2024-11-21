@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Item_Pelucia_Tele
   m_EditorClassIdentifier: 
   itemName: Teletubes
-  itemSprite: {fileID: 21300000, guid: 3686da6b3d4fd064dab1ef6ec34d6db8, type: 3}
+  itemSprite: {fileID: -717196778, guid: 2b7783c2722636e4db247305ad613a09, type: 3}
   girdSizeInPixels: 128
+  pickSound: []
+  pivot: {x: 0.5, y: 0.5}
   serializable:
   - index0: 0
     index1: 0
