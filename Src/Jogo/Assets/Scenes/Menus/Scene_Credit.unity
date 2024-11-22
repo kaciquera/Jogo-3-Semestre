@@ -157,23 +157,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2990701680923140235, guid: 87ea10d2a0c7fc44a84b40763611731e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2990701680923140235, guid: 87ea10d2a0c7fc44a84b40763611731e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 28
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2990701680923140235, guid: 87ea10d2a0c7fc44a84b40763611731e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2990701680923140235, guid: 87ea10d2a0c7fc44a84b40763611731e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2990701680923140235, guid: 87ea10d2a0c7fc44a84b40763611731e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2990701680923140235, guid: 87ea10d2a0c7fc44a84b40763611731e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -205,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2990701680923140235, guid: 87ea10d2a0c7fc44a84b40763611731e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -861
+      value: -840
       objectReference: {fileID: 0}
     - target: {fileID: 2990701680923140235, guid: 87ea10d2a0c7fc44a84b40763611731e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -282,14 +282,14 @@ RectTransform:
   m_GameObject: {fileID: 108973362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.10454, y: 0.92045, z: 0.92045}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1288587109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169, y: -210}
+  m_AnchoredPosition: {x: 169, y: -188.88}
   m_SizeDelta: {x: 1033.3707, y: 83.1647}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108973364
@@ -312,17 +312,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pedro
+  m_text: Pedro, o homem sonoro e beats flamejantes (sound designer)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
-  m_sharedMaterial: {fileID: -6902699212190025085, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
+  m_sharedMaterial: {fileID: 3528374795353355637, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280563010
-  m_fontColor: {r: 0.25882354, g: 0.20784315, b: 0.14117648, a: 1}
+    rgba: 4281014052
+  m_fontColor: {r: 0.14117648, g: 0.09019608, b: 0.16862746, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -339,14 +339,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.03
-  m_fontSizeBase: 44.03
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 4
-  m_HorizontalAlignment: 16
+  m_fontStyle: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -416,14 +416,14 @@ RectTransform:
   m_GameObject: {fileID: 943470451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.10454, y: 0.92045, z: 0.92045}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1288587109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169, y: -55}
+  m_AnchoredPosition: {x: 169, y: -25.96}
   m_SizeDelta: {x: 1033.3707, y: 83.1647}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &943470453
@@ -446,17 +446,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kaique
+  m_text: "Kaique Ramon, o prprio PIX \n(Patrocinador, Social Media )"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
-  m_sharedMaterial: {fileID: -6902699212190025085, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
+  m_sharedMaterial: {fileID: 3528374795353355637, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280563010
-  m_fontColor: {r: 0.25882354, g: 0.20784315, b: 0.14117648, a: 1}
+    rgba: 4281014052
+  m_fontColor: {r: 0.14117648, g: 0.09019608, b: 0.16862746, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -473,14 +473,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.03
-  m_fontSizeBase: 44.03
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 4
-  m_HorizontalAlignment: 16
+  m_fontStyle: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -879,7 +879,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c8eaa2bcbb6c374ca588572edd4aaca, type: 3}
+  m_Sprite: {fileID: -742213400, guid: 80389105cc3177e458bdda47d6641ee0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1026,14 +1026,14 @@ RectTransform:
   m_GameObject: {fileID: 1834755196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.10454, y: 0.92045, z: 0.92045}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1288587109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169, y: 96}
+  m_AnchoredPosition: {x: 169, y: 142.48}
   m_SizeDelta: {x: 1033.3707, y: 83.1647}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1834755198
@@ -1056,17 +1056,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Fellipe Jamas, sou o mano das Artes\t (PixelArt, Design)"
+  m_text: Fellipe Jamas, mano das Artes quadradas (PixelArt, Design)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
-  m_sharedMaterial: {fileID: -6902699212190025085, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
+  m_sharedMaterial: {fileID: 3528374795353355637, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280563010
-  m_fontColor: {r: 0.25882354, g: 0.20784315, b: 0.14117648, a: 1}
+    rgba: 4281014052
+  m_fontColor: {r: 0.14117648, g: 0.09019608, b: 0.16862746, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1083,14 +1083,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44
-  m_fontSizeBase: 44
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 4
-  m_HorizontalAlignment: 16
+  m_fontStyle: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1160,14 +1160,14 @@ RectTransform:
   m_GameObject: {fileID: 1868638717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.10454, y: 0.92045, z: 0.92045}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1288587109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169, y: 237}
+  m_AnchoredPosition: {x: 169, y: 299.88}
   m_SizeDelta: {x: 1033.3707, y: 83.1647}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868638719
@@ -1190,19 +1190,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Akira linda maravilhosa bonita e amavel quebra codigo
+  m_text: 'Akira, linda maravilhosa bonita e amavel quebra codigo
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
-  m_sharedMaterial: {fileID: -6902699212190025085, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
+  m_sharedMaterial: {fileID: 3528374795353355637, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280563010
-  m_fontColor: {r: 0.25882354, g: 0.20784315, b: 0.14117648, a: 1}
+    rgba: 4281014052
+  m_fontColor: {r: 0.14117648, g: 0.09019608, b: 0.16862746, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1219,14 +1219,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.03
-  m_fontSizeBase: 44.03
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 4
-  m_HorizontalAlignment: 16
+  m_fontStyle: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: -65.04633}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1269,6 +1269,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868638717}
   m_CullTransparentMesh: 1
+--- !u!1001 &162308637027778375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7009921760606475291, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_Name
+      value: MENU_FUNDO
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929493635638921627, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 655f02ed00ae9b348b6ba1ad74e9ef41, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1276,3 +1333,4 @@ SceneRoots:
   - {fileID: 1203771378}
   - {fileID: 1371184585}
   - {fileID: 1047931231}
+  - {fileID: 162308637027778375}

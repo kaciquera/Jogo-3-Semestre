@@ -27,16 +27,16 @@ RectTransform:
   m_GameObject: {fileID: 4094846118305022082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4382145593708869565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -28, y: 37}
-  m_SizeDelta: {x: 96, y: 96}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 14.5, y: 93.9}
+  m_SizeDelta: {x: 96, y: 144}
+  m_Pivot: {x: 1, y: 1}
 --- !u!222 &6511234209924036509
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ffb7aebcdd2220649ab2aa1f28ba2e0b, type: 3}
+  m_Sprite: {fileID: 1466257610, guid: a8baf3a51fcc31c44b0271ea21258bea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -169,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2480013018259688152, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 17.526001
+      value: 35.9
       objectReference: {fileID: 0}
     - target: {fileID: 4404724925696888192, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_text
@@ -177,7 +177,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4404724925696888192, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_fontSize
-      value: 70
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404724925696888192, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
+    - target: {fileID: 4404724925696888192, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4404724925696888192, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_fontColor.b
@@ -193,15 +201,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4404724925696888192, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_fontSizeBase
-      value: 70
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4404724925696888192, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -6902699212190025085, guid: 0a66ab44e0c972b4c8086c5486a832fe, type: 2}
+      objectReference: {fileID: 3528374795353355637, guid: fba886c84dc0ed44880dc54fb3aa6cfb, type: 2}
     - target: {fileID: 4404724925696888192, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404724925696888192, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4507988244370075958, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_Type
@@ -210,7 +222,7 @@ PrefabInstance:
     - target: {fileID: 4507988244370075958, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f3e1ad11d66f81748b88df566d81a7a4, type: 3}
+      objectReference: {fileID: -95277925, guid: a8baf3a51fcc31c44b0271ea21258bea, type: 3}
     - target: {fileID: 4507988244370075958, guid: 3b001a12279378649885c6ede5f26b3c, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -354,5 +366,5 @@ MonoBehaviour:
   sceneName: 
   levelText: {fileID: 5995083350627630832}
   lockImage: {fileID: 5967105253027932890}
-  lockedIcon: {fileID: 21300000, guid: ffb7aebcdd2220649ab2aa1f28ba2e0b, type: 3}
-  unlockedIcon: {fileID: 21300000, guid: 9f0cc262e8905a2459a3e1d89da4cfe6, type: 3}
+  lockedIcon: {fileID: 1466257610, guid: a8baf3a51fcc31c44b0271ea21258bea, type: 3}
+  unlockedIcon: {fileID: 115535264, guid: a8baf3a51fcc31c44b0271ea21258bea, type: 3}

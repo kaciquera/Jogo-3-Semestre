@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item_Chocalho
   m_EditorClassIdentifier: 
   itemName: Chocalho
-  itemSprite: {fileID: -158194886, guid: 2b7783c2722636e4db247305ad613a09, type: 3}
+  itemSprite: {fileID: -664837113, guid: 1f95a4004cf636648a7bded47bb9f9cc, type: 3}
   girdSizeInPixels: 128
   pickSound:
   - {fileID: 8300000, guid: b4eaea9f49d71b946bd97ad9ebc19c07, type: 3}
