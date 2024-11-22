@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 674bb2d2651d22e40b0fc38c3b389be4, type: 3}
-  m_Name: Item_Agua
+  m_Name: Item_Teletubies
   m_EditorClassIdentifier: 
-  itemName: agua
-  itemSprite: {fileID: 1838628996, guid: 2b7783c2722636e4db247305ad613a09, type: 3}
+  itemName: Teletubies
+  itemSprite: {fileID: 1251715823, guid: 2b7783c2722636e4db247305ad613a09, type: 3}
   girdSizeInPixels: 128
   pickSound: []
   pivot: {x: 0.5, y: 0.5}
@@ -23,5 +23,11 @@ MonoBehaviour:
     element: 1
   - index0: 0
     index1: 1
-    element: 0
-  editorGridSize: {x: 1, y: 2}
+    element: 1
+  - index0: 1
+    index1: 0
+    element: 1
+  - index0: 1
+    index1: 1
+    element: 1
+  editorGridSize: {x: 2, y: 2}
