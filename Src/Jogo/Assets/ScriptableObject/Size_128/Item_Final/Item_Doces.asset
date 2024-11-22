@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item_Doces
   m_EditorClassIdentifier: 
   itemName: Doces
-  itemSprite: {fileID: 170633739, guid: 2b7783c2722636e4db247305ad613a09, type: 3}
+  itemSprite: {fileID: -851547271, guid: 1f95a4004cf636648a7bded47bb9f9cc, type: 3}
   girdSizeInPixels: 128
   pickSound: []
   pivot: {x: 0.5, y: 0.5}

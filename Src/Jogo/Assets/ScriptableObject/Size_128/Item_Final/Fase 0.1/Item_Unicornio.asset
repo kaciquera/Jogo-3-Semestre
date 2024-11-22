@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item_Unicornio
   m_EditorClassIdentifier: 
   itemName: Unicorio
-  itemSprite: {fileID: -30186609, guid: 2b7783c2722636e4db247305ad613a09, type: 3}
+  itemSprite: {fileID: 22797011, guid: 1f95a4004cf636648a7bded47bb9f9cc, type: 3}
   girdSizeInPixels: 128
   pickSound: []
   pivot: {x: 0.5, y: 0.5}

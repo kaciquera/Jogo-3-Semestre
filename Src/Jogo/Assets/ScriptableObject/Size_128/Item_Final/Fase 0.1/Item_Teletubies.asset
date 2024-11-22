@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item_Teletubies
   m_EditorClassIdentifier: 
   itemName: Teletubies
-  itemSprite: {fileID: 1251715823, guid: 2b7783c2722636e4db247305ad613a09, type: 3}
+  itemSprite: {fileID: 1835755284, guid: 1f95a4004cf636648a7bded47bb9f9cc, type: 3}
   girdSizeInPixels: 128
   pickSound: []
   pivot: {x: 0.5, y: 0.5}

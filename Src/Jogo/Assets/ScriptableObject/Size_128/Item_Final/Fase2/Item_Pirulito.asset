@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item_Pirulito
   m_EditorClassIdentifier: 
   itemName: pirulito
-  itemSprite: {fileID: 969392020, guid: 2b7783c2722636e4db247305ad613a09, type: 3}
+  itemSprite: {fileID: 333410743, guid: 1f95a4004cf636648a7bded47bb9f9cc, type: 3}
   girdSizeInPixels: 128
   pickSound: []
   pivot: {x: 0.5, y: 0.5}
