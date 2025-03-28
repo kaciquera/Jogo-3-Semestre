@@ -5,18 +5,6 @@
 
 ## 👨‍🎓 Integrantes: 
 - Akira Carolina Piziolo Rosa
-- Kaique Ramon Nogueira Dantas
-- Pedro Henrique Santos Teixeira  
-- Antonio Henrique Taddeo Confuorto     
-
-
-## 👩‍🏫 Professores:
-
-- Alexandre de Souza Vasconcelos
-- Raul Dias Paiva Junior
-- Juliana Tuchsznajder Campos
-- Saulo de Oliveira Machado
-- Tatiana Cabral Couto (EaD)
 
 
 ## 📜 Descrição
